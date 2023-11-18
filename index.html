@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="src/index.js" charset="utf-8"></script>
     <title>Intro to AJAX Practice Tasks</title>
-    <script src="src/index.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>Dog CEO</h1>
 
+    <h2 id="loading">loading...</h2>
+
     <div id="dog-image-container">
       <!-- images here -->
     </div>
+    <div class="btns">
+      <button id="Prev-btn">Prev Dog</button>
+      <button id="next-btn">Next Dog</button>
+    </div>
 
-    <hr>
     <label for="select-breed">Filter Breeds That Start with:</label>
     <select id="breed-dropdown" name="select-breed">
       <option value="a">a</option>
@@ -21,9 +27,6 @@
       <option value="d">d</option>
     </select>
 
-    <ul id="dog-breeds">
-
-    </ul>
-
+    <ul id="dog-breeds"></ul>
   </body>
 </html>
